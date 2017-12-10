@@ -1,0 +1,22 @@
+{
+  "name": "marcosadantas/spacenames",
+  "description": "This lib provides command to change every file on dir and sub-dir app namespace",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "version": "1.1",
+  "authors": [
+    {
+      "name": "Marcos Dantas",
+      "email": "marcos.adantas@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Spacenames\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7"
+  },
+  "prefer-stable": true
+}
