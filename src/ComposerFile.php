@@ -21,6 +21,11 @@ class ComposerFile
         return shell_exec('composer config --absolute vendor-dir');
     }
 
+    private static function composerDumpCmd()
+    {
+        shell_exec('composer dumpautoload');
+    }
+
     /**
      * @param string $basePath
      * @return bool|string
@@ -76,6 +81,7 @@ class ComposerFile
 
         if ($result) {
             Logger::message('Json changed with success!');
+            self::composerDumpCmd();
             return;
         }
 
